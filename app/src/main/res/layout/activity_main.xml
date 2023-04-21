@@ -33,6 +33,7 @@
                 />
 
             <EditText
+                android:id="@+id/numberExponentiation"
                 android:inputType="numberDecimal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
 
                 />
             <EditText
+                android:id="@+id/exponentiation"
                 android:inputType="numberDecimal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
                 android:layout_width="60dp"
                 android:backgroundTint ="@color/black"
                 app:layout_constraintRight_toRightOf="parent"
+                android:onClick="exponentiationBtn"
                 />
 
     </LinearLayout >
