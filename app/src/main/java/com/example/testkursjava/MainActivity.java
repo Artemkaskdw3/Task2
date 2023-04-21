@@ -33,4 +33,15 @@
 
 
         }
+
+        public void divisionBtn(View view){
+            TextView answer = findViewById(R.id.answer);
+            EditText number1 = findViewById(R.id.divisionNumber1);
+            EditText number2 = findViewById(R.id.divisionNumber2);
+            float num1 = Float.parseFloat(number1.getText().toString());
+            float num2 = Float.parseFloat(number2.getText().toString());
+            float result = num1 % num2;
+            answer.setText("Ответ:");
+            answer.setText(answer.getText() + String.valueOf(result));
+        }
     }
