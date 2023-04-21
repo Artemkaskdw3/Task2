@@ -8,6 +8,8 @@
     import android.widget.EditText;
     import android.widget.TextView;
 
+    import java.math.RoundingMode;
+
     public class MainActivity extends AppCompatActivity {
 
         @Override
@@ -41,6 +43,15 @@
             float num1 = Float.parseFloat(number1.getText().toString());
             float num2 = Float.parseFloat(number2.getText().toString());
             float result = num1 % num2;
+            answer.setText("Ответ:");
+            answer.setText(answer.getText() + String.valueOf(result));
+        }
+
+        public void roundingBtn(View view){
+            TextView answer = findViewById(R.id.answer);
+            EditText number1 = findViewById(R.id.roundingNumber1);
+            float num1 = Float.parseFloat(number1.getText().toString());
+            int result = Math.round(num1);
             answer.setText("Ответ:");
             answer.setText(answer.getText() + String.valueOf(result));
         }
