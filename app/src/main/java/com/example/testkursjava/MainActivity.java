@@ -55,4 +55,17 @@
             answer.setText("Ответ:");
             answer.setText(answer.getText() + String.valueOf(result));
         }
+
+        public void factorialBtn(View view){
+            TextView answer = findViewById(R.id.answer);
+            EditText number1 = findViewById(R.id.factorialNumber);
+            int num1 = Integer.parseInt(number1.getText().toString());
+            int result = 1;
+            for (int i = 1; i < num1 + 1; i++){
+                result = i * result;
+            }
+
+            answer.setText("Ответ:");
+            answer.setText(answer.getText() + String.valueOf(result));
+        }
     }
